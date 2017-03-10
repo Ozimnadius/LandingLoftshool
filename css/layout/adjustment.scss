@@ -6,13 +6,11 @@
 
 body, html {
   width: 100%;
-  //height: 100%;
-  //font-family: 'fira_sansregular', 'Arial', sans-serif;
-  //font-size: 18px;
-  //line-height: 1.42;
-  //-webkit-font-smoothing: antialiased;
-  //background: #f6f6f6;
-  //color: #414141;
+  font-family: 'ubuntulight', 'Arial', sans-serif;
+  font-size: 14px;
+  line-height: 1.42;
+  -webkit-font-smoothing: antialiased;
+  color: $grey;
 }
 
 .wrapper {
@@ -28,9 +26,29 @@ body, html {
   //}
 }
 
+section {
+  width: 100%;
+  height: 100vh;
+  min-height: 650px;
+}
+
 .container {
-  //max-width: 940px;
-  //margin: 0 auto;
+  width: 940px;
+  margin: 0 auto;
+}
+
+.l-block,
+.r-block {
+  float: left;
+}
+
+.left {
+  float: left;
+
+}
+
+.right {
+  float: right;
 }
 
 ul {

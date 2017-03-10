@@ -1,0 +1,19 @@
+/*------------------#SECTION COMMON----------------------*/
+.button {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 13px;
+  line-height: 35px;
+  color: $white;
+  background-color: $red;
+  padding: 0 15px;
+  border-radius: 5px;
+  font-family: 'ubuntumedium';
+}
+
+
+.title {
+  font-family:'gagalinregular';
+  font-size: 72px;
+  text-transform: uppercase;
+}
