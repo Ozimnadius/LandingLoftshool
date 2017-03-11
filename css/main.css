@@ -503,11 +503,10 @@ li {
 }
 
 footer {
-  height: 50px;
-  margin-top: -50px;
-  position: relative;
-  background: #414141;
-  min-width: 960px;
+  height: 60px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
 }
 
 h1,
@@ -901,6 +900,10 @@ a {
   height: 100%;
 }
 
+.ingredients-item__weight {
+  line-height: 40px;
+}
+
 .kkal {
   font-family: 'gagalinregular';
   font-size: 20px;
@@ -939,6 +942,47 @@ a {
 
 .right-arrow {
   left: 100%;
+}
+
+/*------------------#SECTION TEAM----------------------*/
+.team {
+  background: url(/img/bg/team.jpg) center center no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+/*------------------#PAGE MENU----------------------*/
+.menu {
+  background: url(/img/bg/menu.jpg) center center no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+/*------------------#PAGE REVIEW----------------------*/
+/*------------------#PAGE FORM----------------------*/
+.form {
+  background: url(/img/bg/form.jpg) center center no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+/*------------------#SECTION MAP----------------------*/
+.map {
+  position: relative;
+}
+
+.yandex-map {
+  width: 100%;
+  height: calc(100% - 60px);
+  background: url(/img/content/map.jpg) center center no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+/*------------------#SECTION FOOTER----------------------*/
+.footer {
+  background: url(/img/bg/footer.jpg) center center no-repeat;
+  background-size: cover;
 }
 
 /*# sourceMappingURL=main.css.map */
