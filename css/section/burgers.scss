@@ -10,6 +10,13 @@
   &__right {
     width: 50%;
   }
+  
+  &__composition {
+    width: 90px;
+    height: 90px;
+    border-radius: 5px;
+    background-color: rgba(227, 80, 40, 0.4);
+  }
 
   &__img {
     width: 100%;
