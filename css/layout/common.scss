@@ -16,4 +16,13 @@
   font-family:'gagalinregular';
   font-size: 72px;
   text-transform: uppercase;
+  line-height: 72px;
+
+  &_tac {
+    text-align: center;
+  }
+
+  &_30px{
+    font-size: 30px;
+  }
 }

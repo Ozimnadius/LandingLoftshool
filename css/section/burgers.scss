@@ -1,0 +1,55 @@
+/*------------------#SECTION BURGERS----------------------*/
+
+.burgers {
+  background-image: -moz-linear-gradient(90deg, rgb(249, 180, 59) 0%, rgb(235, 140, 56) 48%, rgb(249, 180, 59) 74%);
+  background-image: -webkit-linear-gradient(90deg, rgb(249, 180, 59) 0%, rgb(235, 140, 56) 48%, rgb(249, 180, 59) 74%);
+  background-image: -ms-linear-gradient(90deg, rgb(249, 180, 59) 0%, rgb(235, 140, 56) 48%, rgb(249, 180, 59) 74%);
+  position: relative;
+  color: $white;
+  &__left,
+  &__right {
+    width: 50%;
+  }
+
+  &__img {
+    width: 100%;
+  }
+
+  &__title {
+    margin-bottom: 40px;
+  }
+
+}
+
+.burgers-price__title {
+  color: $red;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 25px;
+}
+
+.kkal {
+  font-family: 'gagalinregular';
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.502);
+  position: relative;
+
+  &__img {
+    fill-opacity: .502;
+  }
+  &__1200 {
+    position: absolute;
+    top: 25px;
+    left: 15px;
+  }
+
+  &__kkal {
+    font-size: 14px;
+    position: absolute;
+    top: 95%;
+    left: 15px;
+  }
+}
+
+
+

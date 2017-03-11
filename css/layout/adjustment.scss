@@ -35,6 +35,12 @@ section {
 .container {
   width: 940px;
   margin: 0 auto;
+  &_center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%)translateX(-50%);
+  }
 }
 
 .l-block,

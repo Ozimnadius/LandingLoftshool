@@ -471,6 +471,15 @@ section {
   margin: 0 auto;
 }
 
+.container_center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateY(-50%) translateX(-50%);
+  -ms-transform: translateY(-50%) translateX(-50%);
+  transform: translateY(-50%) translateX(-50%);
+}
+
 .l-block,
 .r-block {
   float: left;
@@ -592,6 +601,15 @@ a {
   font-family: 'gagalinregular';
   font-size: 72px;
   text-transform: uppercase;
+  line-height: 72px;
+}
+
+.title_tac {
+  text-align: center;
+}
+
+.title_30px {
+  font-size: 30px;
 }
 
 /*------------------#SECTION NAV----------------------*/
@@ -646,14 +664,6 @@ a {
   position: relative;
 }
 
-.first-page__content {
-  position: absolute;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-}
-
 .first-page__left, .first-page__right {
   width: 50%;
 }
@@ -662,8 +672,13 @@ a {
   padding: 120px 0 0 20px;
 }
 
+.first-page__img {
+  width: 100%;
+}
+
 .first-page__title {
   color: #f9b43b;
+  margin-bottom: 40px;
 }
 
 .first-page__desc {
@@ -741,6 +756,84 @@ a {
 .down-arrow:hover svg {
   width: 35px;
   height: 35px;
+}
+
+/*------------------#SECTION-WE----------------------*/
+.we {
+  background: url(/img/bg/we.jpg) center center no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.we__desc {
+  width: 33%;
+  text-align: center;
+}
+
+.we__title {
+  margin-bottom: 70px;
+}
+
+.we-desc__img {
+  margin-bottom: 25px;
+}
+
+.we-desc__title {
+  font-family: 'lifehackmedium';
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/*------------------#SECTION BURGERS----------------------*/
+.burgers {
+  background-image: -moz-linear-gradient(90deg, #f9b43b 0%, #eb8c38 48%, #f9b43b 74%);
+  background-image: -webkit-linear-gradient(90deg, #f9b43b 0%, #eb8c38 48%, #f9b43b 74%);
+  background-image: -ms-linear-gradient(90deg, #f9b43b 0%, #eb8c38 48%, #f9b43b 74%);
+  position: relative;
+  color: #fff;
+}
+
+.burgers__left, .burgers__right {
+  width: 50%;
+}
+
+.burgers__img {
+  width: 100%;
+}
+
+.burgers__title {
+  margin-bottom: 40px;
+}
+
+.burgers-price__title {
+  color: #e35028;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 25px;
+}
+
+.kkal {
+  font-family: 'gagalinregular';
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.502);
+  position: relative;
+}
+
+.kkal__img {
+  fill-opacity: .502;
+}
+
+.kkal__1200 {
+  position: absolute;
+  top: 25px;
+  left: 15px;
+}
+
+.kkal__kkal {
+  font-size: 14px;
+  position: absolute;
+  top: 95%;
+  left: 15px;
 }
 
 /*# sourceMappingURL=main.css.map */
