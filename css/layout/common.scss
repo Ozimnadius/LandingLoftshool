@@ -26,3 +26,14 @@
     font-size: 30px;
   }
 }
+
+.arrow {
+  width: 30px;
+  height: 16px;
+  &_left {
+    transform: rotate(90deg);
+  }
+  &_right {
+    transform: rotate(-90deg);
+  }
+}
