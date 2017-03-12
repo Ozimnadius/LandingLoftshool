@@ -1,9 +1,12 @@
 //variables
 //colors
 $white: #fff;
+$orange: #e45028;
 $yellow: #f9b43b;
 $grey: #2f3234;
 $red: #e35028;
+
+$container-width: 940px;
 
 
 
@@ -15,7 +18,9 @@ $red: #e35028;
 @import "layout/nav";
 
 
+
 //section
+@import "section/header";
 @import "section/first-page";
 @import "section/we";
 @import "section/burgers";
