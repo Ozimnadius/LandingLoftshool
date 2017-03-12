@@ -9,6 +9,7 @@
   padding: 0 15px;
   border-radius: 5px;
   font-family: 'ubuntumedium';
+  text-transform: uppercase;
 }
 
 
@@ -36,4 +37,37 @@
   &_right {
     transform: rotate(-90deg);
   }
+}
+
+.col-1 {
+  width: 100%;
+
+  &__block {
+    width: 21.25%;
+    margin-right: 5%;
+    display: inline-block;
+    vertical-align: top;
+    &:last-child {
+      margin-right: 0;
+    }
+
+  }
+}
+
+.col-2 {
+  width: 100%;
+
+  &__block {
+    width: 47.5%;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 5%;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.col4 {
+  width: 100%;
 }
