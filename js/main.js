@@ -62,3 +62,41 @@ $(function () {
 
     });
 }());
+
+
+
+//yandex-map
+ymaps.ready(init);
+var myMap,
+    myPlacemark;
+
+function init() {
+    myMap = new ymaps.Map("map", {
+        center: [55.65587627, 37.54100446],
+        zoom: 14
+    });
+
+    myMap.behaviors.disable(['scrollZoom']);
+    myMap.controls.remove('geolocationControl')
+        .remove('searchControl')
+        .remove('trafficControl')
+        .remove('typeSelector')
+        .remove('fullscreenControl')
+        .remove('zoomControl')
+        .remove('rulerControl');
+
+    myPin = new ymaps.GeoObjectCollection({}, {
+        iconLayout: 'default#image',
+        iconImageHref: '/img/icons/map-marker.svg',
+        iconImageSize: [46, 57],
+        iconImageOffset: [-15, -55]
+    });
+
+    myPlacemark1 = new ymaps.Placemark([55.65587627, 37.54100446], {});
+    myPlacemark2 = new ymaps.Placemark([55.64158266, 37.52660636], {});
+    myPlacemark3 = new ymaps.Placemark([55.65672547, 37.57243995], {});
+    myPlacemark4 = new ymaps.Placemark([55.66958253, 37.55184058], {});
+
+    myPin.add(myPlacemark1).add(myPlacemark2).add(myPlacemark3).add(myPlacemark4);
+    myMap.geoObjects.add(myPin);
+}
