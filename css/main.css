@@ -1153,6 +1153,7 @@ footer {
   height: 100%;
   float: left;
   overflow: hidden;
+  transition: .4s;
 }
 
 .menu-content__text {
