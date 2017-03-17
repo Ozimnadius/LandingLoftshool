@@ -70,3 +70,36 @@
 .col4 {
   width: 100%;
 }
+
+
+.review-modal {
+  //position: absolute;
+  //top: 0;
+  width: 460px;
+  border-radius: 5px;
+  padding: 25px 20px;
+  background-color: $white;
+  display: inline-block;
+  position: relative;
+
+  &__close {
+    width: 15px;
+    height: 15px;
+    background: url(/img/icons/close.svg);
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+
+  &__title {
+    font-family: 'gagalinregular';
+    margin-bottom: 25px;
+  }
+
+
+}
+
+.fancybox-close-small {
+  display: none;
+}

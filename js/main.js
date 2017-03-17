@@ -21,7 +21,7 @@ $(function () {
 
 
         mainContent.css({
-            'transform' :  'translate3d(0,' + position + ', 0)'
+            'transform': 'translate3d(0,' + position + ', 0)'
         });
 
         setTimeout(function () {
@@ -85,18 +85,18 @@ $(function () {
 
         if ($(e.target).is('textarea')) return;
 
-       switch (e.keyCode) {
-           case 38: //up
-               if (prevSection.length) {
-                   screen = prevSection.index();
-               }
-               break;
-           case 40: //down
-               if (nextSection.length) {
-                   screen = nextSection.index();
-               }
-               break;
-       }
+        switch (e.keyCode) {
+            case 38: //up
+                if (prevSection.length) {
+                    screen = prevSection.index();
+                }
+                break;
+            case 40: //down
+                if (nextSection.length) {
+                    screen = nextSection.index();
+                }
+                break;
+        }
 
         scrollToSection(screen);
 
@@ -202,6 +202,15 @@ $(function () {
 (function () {
     $('.phone-mask').inputmask('+7 (999) 999 99 99');
 }());
+
+
+//fancybox
+$(function () {
+    $('.review-modal__close').on('click', function (e) {
+        e.preventDefault();
+        $.fancybox.close();
+    });
+});
 
 
 //yandex-map
