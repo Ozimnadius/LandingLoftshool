@@ -8,15 +8,9 @@
 
   &__item {
     margin-bottom: 5px;
-  }
-
-  &__link {
     border-radius: 50%;
     border: 1px solid transparent;
-    width: 16px;
-    height: 16px;
-    display: block;
-    position: relative;
+    overflow: hidden;
     transition: .4s;
 
     &_active {
@@ -26,6 +20,25 @@
     &:hover {
       border: 1px solid #ffffff;
     }
+
+  }
+
+  &__link {
+    //border-radius: 50%;
+    //border: 1px solid transparent;
+    width: 16px;
+    height: 16px;
+    display: block;
+    position: relative;
+    //transition: .4s;
+
+    //&_active {
+    //  border: 1px solid #ffffff;
+    //}
+
+    //&:hover {
+    //  border: 1px solid #ffffff;
+    //}
 
     &:before {
       content: "";
