@@ -85,6 +85,8 @@ $(function () {
 
         if ($(e.target).is('textarea')) return;
 
+        if (!(e.keyCode ===38 || e.keyCode ===40)) return;
+
         switch (e.keyCode) {
             case 38: //up
                 if (prevSection.length) {
@@ -252,3 +254,40 @@ $(function () {
     }
 }());
 
+
+//form mail
+$(function () {
+    $('#order-form').on('submit', function (e) {
+        e.preventDefault();
+
+        var form = $(this),
+            formData = form.serialize();
+
+        $.post('/mail.php', formData, function (data) {
+
+            // console.log(data);
+
+            data = JSON.parse(data);
+            var popup = data.status ? '#success' : '#error';
+
+            $('.status-popup__close').on('click', function (e) {
+                e.preventDefault();
+                $.fancybox.close();
+            });
+
+            $.fancybox.open({
+                src  : popup,
+                type : 'inline',
+                opts : {
+                    afterClose: function () {
+                        form.trigger('reset');
+                    }
+                }
+            });
+
+        });
+
+
+
+    });
+});

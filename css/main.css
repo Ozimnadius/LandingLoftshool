@@ -703,6 +703,20 @@ footer {
   margin-bottom: 25px;
 }
 
+.status-popup {
+  border-radius: 5px;
+  background-color: #fff;
+  display: inline-block;
+  width: 250px;
+  text-align: center;
+  padding: 10px;
+  position: relative;
+}
+
+.status-popup__inner {
+  text-align: center;
+}
+
 .fancybox-close-small {
   display: none;
 }

@@ -1158,7 +1158,7 @@
     <section class="section order">
       <div class="container">
         <div class="title order__title">Заказжите доставку</div>
-        <form class="form clearfix" action="#">
+        <form class="form clearfix" id="order-form" action="#">
 
           <!--left block-->
           <div class="left form__left">
@@ -1168,13 +1168,13 @@
                 <div class="col-2__block">
                   <label class="form__item">
                     <div class="form__label">Имя</div>
-                    <input type="text" name="" id="" class="form__input">
+                    <input type="text" name="name" class="form__input">
                   </label>
                 </div>
                 <div class="col-2__block">
                   <label class="form__item">
                     <div class="form__label">Телефон</div>
-                    <input type="tel" name="" id="" class="form__input
+                    <input type="tel" name="tel" class="form__input
                     phone-mask">
                   </label>
                 </div>
@@ -1185,7 +1185,7 @@
               <div class="col-4">
                 <label class="form__item">
                   <div class="form__label">Улица</div>
-                  <input type="text" class="form__input ">
+                  <input type="text" name="street" class="form__input ">
                 </label>
               </div>
             </div>
@@ -1195,25 +1195,25 @@
                 <div class="col-1__block">
                   <label class="form__item">
                     <div class="form__label">Дом</div>
-                    <input type="text" class="form__input">
+                    <input type="text" name="house" class="form__input">
                   </label>
                 </div>
                 <div class="col-1__block">
                   <label class="form__item">
                     <div class="form__label">Корпус</div>
-                    <input type="text" class="form__input">
+                    <input type="text" name="block" class="form__input">
                   </label>
                 </div>
                 <div class="col-1__block">
                   <label class="form__item">
                     <div class="form__label">Квартира</div>
-                    <input type="text" class="form__input">
+                    <input type="text" name="room" class="form__input">
                   </label>
                 </div>
                 <div class="col-1__block">
                   <label class="form__item">
                     <div class="form__label">Этаж</div>
-                    <input type="text" class="form__input">
+                    <input type="text" name="floor" class="form__input">
                   </label>
                 </div>
               </div>
@@ -1228,7 +1228,7 @@
               <div class="col-4">
                 <label class="form__item">
                   <div class="form__label">Комментарий</div>
-                  <textarea name=""
+                  <textarea name="textarea"
                             class="form__input form__input_textarea">
                         </textarea>
                 </label>
@@ -1263,7 +1263,7 @@
 
             <!--buttons-->
             <div class="form__row">
-              <input type="submit" value="ЗАКАЗАТЬ" class="form__button">
+              <input type="submit" value="ЗАКАЗАТЬ" class="form__button button__submit">
               <input type="reset" value="Очистить"
                      class="form__button form__button_reset">
             </div>
@@ -1365,6 +1365,17 @@
   </div>
 </div>
 
+<div class="status-popup" style="display: none;" id="success">
+  <div class="status-popup__inner">
+    <div class="status-popup__message">Сообщение отправлено</div><a class="status-popup__close button" href="#">Закрыть</a>
+  </div>
+</div>
+
+<div class="status-popup" style="display: none;" id="error">
+  <div class="status-popup__inner">
+    <div class="status-popup__message error-message">Произошла ошибка</div><a class="status-popup__close button" href="#">Закрыть</a>
+  </div>
+</div>
 
 <!--End code-->
 
