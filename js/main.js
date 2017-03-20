@@ -13,7 +13,7 @@ $(function () {
     var scrollToSection = function (sectionIndex) {
         var position;
 
-        position = ((sections.eq(sectionIndex).index()) * -100) + 'vh';
+        position = ((sections.eq(sectionIndex).index()) * -100) + '%';
 
         sections.eq(sectionIndex).addClass('active')
             .siblings()
